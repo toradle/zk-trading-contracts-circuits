@@ -10,6 +10,8 @@
     "deploy:local": "forge script script/Deploy.s.sol --rpc-url localhost --broadcast",
     "deploy:base": "forge script script/Deploy.s.sol --rpc-url base --broadcast --verify",
     "deploy:sepolia": "forge script script/Deploy.s.sol --rpc-url base_sepolia --broadcast --verify",
+    "deploy:horizen": "forge script script/DeployHorizen.s.sol --rpc-url https://horizen-rpc-testnet.appchain.base.org --broadcast",
+    "deploy:horizen:verify": "forge script script/DeployHorizen.s.sol --rpc-url https://horizen-rpc-testnet.appchain.base.org --broadcast --verify",
     "lint": "solhint src/**/*.sol",
     "format": "forge fmt",
     "slither": "slither src/",
